@@ -1,0 +1,68 @@
+<!-- public/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsopedia - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <span>⬡</span>
+            <span>Dashboard</span>
+        </div>
+        <nav>
+            <div class="nav-item" data-category="ai AND machine learning AND deep learning AND gen-ai">
+                <span>📱 AI and its components</span>
+            </div>
+            <div class="nav-item" data-category="robotics AND smart devices">
+                <span>🤖 Robotics</span>
+            </div>
+            <div class="nav-item" data-category="sensors AND IoT">
+                <span>📡 Sensors and IoT</span>
+            </div>
+            <div class="nav-item" data-category="finance AND stock market">
+                <span>📈 Finance and Market</span>
+            </div>
+        </nav>
+        <div class="user-profile">
+            <div class="profile-img"></div>
+            <span id="profile-name">User</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+            <div class="welcome-text">Hello <span id="username"></span> 👋</div>
+            <input type="search" class="search-bar" placeholder="Search">
+        </div>
+    
+        <div class="header-title">
+            <h1>NEWSOPEDIA</h1>
+            
+        </div>
+
+        <div id="loadingIndicator" style="display: none; text-align: center; padding: 20px;">
+            Loading news...
+        </div>
+
+        <div class="news-grid" id="newsGrid"></div>
+    </div>
+
+
+
+    <script src="dashboard.js"></script>
+   
+
+</body>
+</html>
+
+
+
+
+    
